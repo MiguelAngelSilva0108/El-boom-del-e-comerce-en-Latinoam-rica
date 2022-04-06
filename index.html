@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>El boom del e-commerce latinoamericano</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <script src="codigo.js"></script>
+</head>
+<body>
+  <div class="contenedor">
+    <nav class="navbar navbar-light" style="background-color: #141E27;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="ecomerce.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+        EL BOOM DEL E-COMERCE LATINOAMERICANO
+      </a>
+    </div>
+  </nav>
+  <div class="borde"></div>
+  <h1 class="titulo">  El boom del e-comerce latinoamericano</h1>
+  <p class="parrafo" > Valor de las ventas online en países latinoamericanos 
+  <br> 2019 y 2024 (En miles de millones de dólares estadounidenses)
+</p>
+  <select name="Pais" id="lista" onchange="getSelectValue();">
+    <option value="Seleccione">Seleccione el país</option>
+    <option value="Todos">Todos los países</option>
+    <option value="Argentina">Argentina</option>
+    <option value="Brasil">Brasil</option>
+    <option value="Colombia">Colombia</option>
+    <option value="Mexico">México</option>
+    <option value="Peru">Perú</option>
+    <option value="Resto">Resto de Latinoamérica y Caribe</option>
+  </select>
+  <div id="graficas"> 
+    <canvas id="grafica"></canvas>
+    <canvas id="graficaArgentina"></canvas>
+    <canvas id="graficaBrasil"></canvas>
+    <canvas id="graficaColombia"></canvas>
+    <canvas id="graficaMexico"></canvas>
+    <canvas id="graficaPeru"></canvas>
+    <canvas id="graficaResto"></canvas>  
+  </div>
+  <div class="leyenda-grafica" id="Leyenda">
+     <p>*Previsiones <br>Fuente: Statista Digital Market Outlook</p>
+  </div>
+ 
+  <footer>
+  <a href="https://www.linkedin.com/in/miguel-ángel-silva-bata-7b3757235/">
+  <img src="Linkedin.png" alt="" width="35" height="29" >
+  </a>
+  <div>
+    Página elaborada por Miguel Ángel Silva Bata <br>
+    miguel.a_silva@outlook.com 
+  </div>
+  </footer>
+
+
+  </div>
+  
+</body>
+</html>
